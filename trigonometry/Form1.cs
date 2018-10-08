@@ -15,6 +15,17 @@ namespace trigonometry
         public Form1()
         {
             InitializeComponent();
+            richTextBox1.AppendText("sin(45)="+sin(45)+"\n");
+        }
+
+        double sin(double x)
+        {
+            return (Math.Sin(x * Math.PI / 180.0));
+        }
+
+        double asin(double x)
+        {
+            return (Math.Asin(x) * 180 / Math.PI);
         }
     }
 }
